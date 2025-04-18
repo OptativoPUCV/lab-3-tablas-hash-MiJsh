@@ -112,6 +112,14 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-
-    return bucket[2]-> value;
+    //>:3
+    for (long i = map -> current + 1; i < map-> capacity; i++)
+    {
+        if (map -> buckets[i] != NULL && map -> buckets[i]->key != NULL) 
+        {
+            map -> current = i;
+            return map -> buckets [i];
+        }
+    }
+    return NULL;
 }
