@@ -113,5 +113,5 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
 
-    return NULL;
+    return bucket[2]-> value;
 }
