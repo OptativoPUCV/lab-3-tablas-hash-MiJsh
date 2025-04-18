@@ -16,3 +16,18 @@ Fri, Apr 18, 2025  6:09:11 PM:
  tests:  8|3
 total_score: 40/70
 4499124
+Fri, Apr 18, 2025  6:11:54 PM: 
+ hashmap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:4:0:
+hashmap.c: In function 'eraseMap':
+hashmap.c:94:9: error: 'pair' undeclared (first use in this function)
+     if (pair == NULL) return;
+         ^~~~
+hashmap.c:94:9: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:92:11: error: unused variable 'par' [-Werror=unused-variable]
+     Pair *par = searchMap(map, key);
+           ^~~
+cc1.exe: all warnings being treated as errors
+5295a1e

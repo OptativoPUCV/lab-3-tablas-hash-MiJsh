@@ -89,7 +89,14 @@ Pair * searchMap(HashMap * map,  char * key) {
 
 
 void eraseMap(HashMap * map,  char * key) {    
+    Pair *par = searchMap(map, key);
 
+    if (pair == NULL) return;
+
+    //no eliminar lol, solo invalido
+    pair -> key = NULL;
+
+    map -> size--;
 }
 
 Pair * firstMap(HashMap * map) {
